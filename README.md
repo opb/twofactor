@@ -75,6 +75,7 @@ import github.com/sec51/twofactor
 		return err
 	}
 ```
+Note that Google Authenticator specifically requires `crypto.SHA1` to be used, and will not work with `SHA256` or `SHA512`.
 
 3- Display the PNG QR code to the user and an input text field, so that he can insert the token generated from his device
 
